@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url('Assets/Fonts/JetBrains_Mono.ttf') format('truetype'),
+         url('Assets/Fonts/JetBrains_Mono.woff') format('woff'),
+         url('Assets/Fonts/JetBrains_Mono.woff2') format('woff2');
+}
+
+body {
+    background: linear-gradient(135deg, #eaeaea 0%, #b1b1b1 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden
+}
+
+.maincontent {
+    font-family: "JetBrains Mono", monospace;
+    margin: 20px;
+    font-size: 1em;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.maincontent h1 {
+    font-size: 2.5em;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.maincontent h1 span {
+    display: inline-block;
+    animation: bounce 1s infinite ease-in-out ;
+    transition: all 0.5s ease-in-out;
+}
+
+.maincontent h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.maincontent h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.maincontent h1 span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.maincontent h1 span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.maincontent h1 span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.maincontent h1 span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.maincontent h1 span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.maincontent h1 span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.maincontent h1 span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.maincontent h1 span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.maincontent p {
+    font-size: 0.9em;
+    color: #000000;
+    line-height: 2em;
+    text-align: justify;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rainbowColors {
+    0% {
+        color: #ff0000;
+    }
+    10% {
+        color: #ff8000;
+    }
+    20% {
+        color: #ffff00;
+    }
+    30% {
+        color: #80ff00;
+    }
+    40% {
+        color: #00ff00;
+    }
+    50% {
+        color: #00ff80;
+    }
+    60% {
+        color: #00ffff;
+    }
+    70% {
+        color: #0080ff;
+    }
+    80% {
+        color: #0000ff;
+    }
+    90% {
+        color: #8000ff;
+    }
+    100% {
+        color: #ff00ff;
+    }
+}
+
+@keyframes colors {
+    0%, 100% {
+        color: #000000;
+    }
+    25% {
+        color: #559600;
+    }
+    50% {
+        color: #00615c;
+    }
+    75% {
+        color: #2400d9;
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes breathing{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(135deg, #181818 0%, #3f7e85 100%);
+    border-bottom: 0px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+    opacity: 1;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.1em;
+    transition: color 0.5s;
+    opacity: 1;
+    cursor: pointer;    
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.contact {
+    font-family: "JetBrains Mono", monospace;
+    margin: 20px;
+    font-size: 1em;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #003f02;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.1em;
+    transition: color 0.5s;
+    opacity: 1;
+}
+
+.contact a:hover {
+    color: #007BFF;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.contact p {
+    font-size: 0.9em;
+    color: #000000;
+    line-height: 2em;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.contact p b {
+    font-size: 1.2em;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin: 20px;
+    border: #000000 5px solid;
+    margin: 0;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.maincontent b{
+    font-size: 1.2em;
+}
+
+.maincontent a {
+    text-decoration: none;
+    color: #208900;
+    font-family: "JetBrains Mono", monospace;
+    transition: color 0.5s;
+    opacity: 1;
+}
+
+.maincontent a:hover {
+    color: #007BFF;
+}
+
+#inconvenience {
+    font-size: 2em;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#emoji{
+    font-size: 7.5em;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.memes img{
+    width: 17.5%;
+    height: auto;
+    animation: fadeIn2 1s forwards ease-in-out;
+}
+
+.memes img:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.memes img:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.memes img:nth-child(3){
+    animation-delay: 0.3s;
+}
+
+.memes img:nth-child(4){
+    animation-delay: 0.4s;
+}
+
+.memes img:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+.memes img:nth-child(6){
+    animation-delay: 0.6s;
+}
+
+.memes img:nth-child(7){
+    animation-delay: 0.7s;
+}
+
+.memes img:nth-child(8){
+    animation-delay: 0.8s;
+}
+
+.memes img:nth-child(9){
+    animation-delay: 0.9s;
+}
+
+.memes img:nth-child(10){
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
