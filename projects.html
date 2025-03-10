@@ -6,7 +6,7 @@
         <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body id = "body">
         <nav>
             <ul>
                 <li><a href="index.html">Home 🏠 </a></li>
@@ -29,9 +29,9 @@
         <h1 id = "emoji">🚧🏗️</h1> -->
 
         <div class = "projects">
-            <div class = "gameDiv">
+            <div class = "gameDiv" >
                 <a target = "_blank"href = "https://mega-cookie-monster.github.io/supa-zappa-rebornv1.0.7/">
-                    <img src = "Assets/ProjectIMG/game1.png" alt = "Game 1">
+                    <img src = "Assets/ProjectIMG/game1.png" alt = "Game 1" id = "rainbowBorder">
                     <h2 id = "rainbow">Supa Zappa Reborn!</h2>
                 </a>
             </div>
@@ -49,4 +49,11 @@
             </div>
         </div>
     </body>
+    <script>
+        var body = document.getElementById("body");
+        body.style.overflowY = "hidden";
+        setTimeout(() => {
+            body.style.overflow = "auto";
+        }, 5000);
+    </script>
 </html>
