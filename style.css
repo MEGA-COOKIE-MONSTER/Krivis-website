@@ -377,3 +377,52 @@ iframe {
         opacity: 1;
     }
 }
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gameDiv{
+    width: 15%;
+    height: 15%;
+    margin: 1.5em;
+    animation: slideInRandom 5s forwards ease-in-out ;
+}
+
+@keyframes slideInRandom {
+    0% {
+        transform: translateY(1000%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.gameDiv img:hover{
+    animation: wiggle 0.5s forwards ease-in-out;
+    cursor: pointer;
+}
+
+.gameDiv img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px #000000;
+}
+
+.gameDiv a{
+    text-decoration: none;
+    font-size: 12.5px;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#rainbow{
+    animation: rainbowColors 5s infinite ease-in-out;
+}
