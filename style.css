@@ -331,15 +331,14 @@ iframe {
 }
 
 .memes img{
-    width: 17.5%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    height: 20%;
-    width: 20%;
     object-fit: cover;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: all 0.5s ease-in-out;
     /* animation: fadeIn2 1s ease-in-out; */
 }
 
@@ -381,6 +380,47 @@ iframe {
 
 .memes img:nth-child(10){
     animation-delay: 1s;
+}
+
+.memes img:hover{
+    animation: wiggle 0.5s infinite ease-in-out, rainbowBorder2 5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes rainbowBorder2{
+    0%{
+        border: 5px solid #ff0000;
+    }
+    10%{
+        border: 5px solid #ff8000;
+    }  
+    20%{
+        border: 5px solid #ffff00;
+    }
+    30%{
+        border: 5px solid #80ff00;
+    }
+    40%{
+        border: 5px solid #00ff00;
+    }
+    50%{
+        border: 5px solid #00ff80;
+    }
+    60%{
+        border: 5px solid #00ffff;
+    }
+    70%{
+        border: 5px solid #0080ff;
+    }
+    80%{
+        border: 5px solid #0000ff;
+    }
+    90%{
+        border: 5px solid #8000ff;
+    }
+    100%{
+        border: 5px solid #ff00ff;
+    }
 }
 
 @keyframes fadeIn2 {
@@ -494,4 +534,10 @@ iframe {
 
 #rainbowBorder:hover{
     animation: wiggle 0.5s forwards ease-in-out, rainbowBorder 5s infinite ease-in-out;
+}
+
+.memes a{
+    width: 20%;
+    height: 20%;
+    margin: 0;
 }
