@@ -6,14 +6,14 @@
         <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body id = "body">
+    <body>
         <nav>
             <ul>
                 <li><a onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">Home 🏠 </a></li>
                 <li><a href="projects.html">Projects 🎮🕹️</a></li>
                 <li><a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" >Contact 📨 </a></li>
                 <li><a href="memes.html">Memes 🤣🥳</a></li>
-                <li><a href="Assets/music.zip">Music 🎵 -> <span style="font-size: 0.5em;">Music provided by <b id = "rainbow">Noah</b></span></a></li>
+                <li><a href="Assets/music.zip">Music 🎵 -> <span style="font-size: 0.5em;">Music provided by <b id = "rainbow">Noah Augusto</b></span></a></li>
             </ul>
         </nav>
         <br id = "home">
@@ -54,12 +54,5 @@
         </div>
         <br>
         <script src="script.js"></script>
-        <script>
-            var body = document.getElementById("body");
-            body.style.overflowY = "hidden";
-            setTimeout(() => {
-                body.style.overflowY = "auto";
-            }, 5000);
-        </script>
     </body>
 </html>
