@@ -235,6 +235,7 @@ nav ul li a:hover {
     font-size: 1.1em;
     transition: color 0.5s;
     opacity: 1;
+    font-whieght: 1000
 }
 
 .contact a:hover {
